@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using HaaToChess;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-
+// Haavard var her
 namespace repos.Controllers
 {
     [ApiController]
