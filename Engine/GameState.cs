@@ -210,8 +210,11 @@ namespace HaaToChess
         {
             String[] subFEN = fen.Split(' ');                                                           //Split FEN into state ....
 
-            String currentState = subFEN[0];                                                            // Current game state
-            if (!(subFEN[1] is null) & subFEN[1] == "w") {this.AIPlayer = 1; }                          //AI color
+            String currentState = subFEN[0];
+            
+            this.AIPlayer = subFEN[1] == "w" ? 1 : 0;
+                                                                        // Current game state
+            // if (!(subFEN[1] is null) & subFEN[1] == "w") {this.AIPlayer = 1; }                          //AI color
             //CastlinRights
             //En Passent Targets
             //Half move clock

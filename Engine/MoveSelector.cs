@@ -47,7 +47,7 @@ namespace HaaToChess
             Piece p = gs.GetPiece(m.PrimaryPieceID, gs.AIPlayer);
             int fromPos = (int)Math.Log(p.Position, 2);
             int toPos = (int)Math.Log(m.PrimaryNewPosition, 2);
-            return new ClientMove(sqID[fromPos],sqID[toPos],p.Color.ToString());
+            return new ClientMove(sqID[fromPos],sqID[toPos],p.Color);
         }
 
         public Move GetRandomMove(GameState chessBoard)

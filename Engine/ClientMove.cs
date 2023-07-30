@@ -8,15 +8,15 @@ namespace HaaToChess
 {
     public class ClientMove
     {
-        public string fromSq { get; set; }
-        public string toSq { get; set; }
-        public string aiColor { get; set; }
+        public string from { get; set; }
+        public string to { get; set; }
+        public string color { get; set; }
 
-        public ClientMove(string from, string to, string color)
+        public ClientMove(string from, string to, int color)
         {
-            fromSq = from;
-            toSq = to;
-            aiColor = color;
+            this.from = from;
+            this.to = to;
+            this.color = color==0 ? "b" : "w" ;
         }
     }
 }
