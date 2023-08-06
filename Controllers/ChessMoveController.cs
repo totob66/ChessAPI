@@ -24,8 +24,8 @@ namespace repos.Controllers
         public ClientMove getBestMove(ChessBoardState currentState)
         {
 
-            int[] fparam = new int[] { 1, 1, 1 };                                   // Set evaluation paramter weightings (Material, Position, Mobility) 
-            int searchDepth = 5;                                                    // MiniMax Aplpha Beta search depth
+            int[] fparam = new int[] { 3, 1, 1 };                                   // Set evaluation paramter weightings (Material, Position, Mobility) 
+            int searchDepth = 4;                                                    // MiniMax Aplpha Beta search depth
             GameState currentBoard = new GameState(currentState.fenString);         // Initiate new game state using FEN string
             MoveSelector mg = new MoveSelector(fparam);                             // Initiate new move selector with evaluation weights
             ClientMove bestMove = mg.getBestMove(currentBoard, searchDepth) ;       // Return best move based on currentBoard state

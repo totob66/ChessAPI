@@ -460,19 +460,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\haavard\\.nuget\\packages\\": {}
+    "C:\\Users\\torfi\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\haavard\\source\\repos\\ChessAPI\\ChessAPI.csproj",
+      "projectUniqueName": "C:\\Users\\torfi\\source\\repos\\ChessAPI\\ChessAPI.csproj",
       "projectName": "ChessAPI",
-      "projectPath": "C:\\Users\\haavard\\source\\repos\\ChessAPI\\ChessAPI.csproj",
-      "packagesPath": "C:\\Users\\haavard\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\haavard\\source\\repos\\ChessAPI\\obj\\",
+      "projectPath": "C:\\Users\\torfi\\source\\repos\\ChessAPI\\ChessAPI.csproj",
+      "packagesPath": "C:\\Users\\torfi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\torfi\\source\\repos\\ChessAPI\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\haavard\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\torfi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -480,6 +485,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -526,7 +532,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -207,8 +207,7 @@ namespace HaaToChess
         //Public methodes
         public int GameStateScore(GameState gs,int p) {
             int score=0;
-            score = (fParam[0] * Material(gs, p));
-            // + fParam[1] * Position(gs, p) + fParam[2]*Mobility(gs,p));
+            score = (fParam[0] * Material(gs, p)+ fParam[1] * Position(gs, p) + fParam[2]*Mobility(gs,p));
             //Debug.Write("Material: " + fParam[0] * Material(gs, p) + "  Position: " + fParam[1] * Position(gs, p) + " Mobility: " + fParam[2] * Mobility(gs, p));
             return score;
         }
